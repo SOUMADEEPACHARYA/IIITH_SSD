@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table, td,th{
+                border :1px solid black;
+            }
+           
+        </style>
+         <link rel= "stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>
+            Students Records
+        </h1>
+        
+            <input type="number" id="roll" name= "roll" placeholder="Roll no">
+            <input type="text" id="name" name= "name" placeholder="Name">
+            <button onclick="adding()">ADD NEW</button>
+        <br/>
+        <table id="mytable">
+           <tr>
+            <th>ROLL NO</th>
+            <th>NAME</th>
+           </tr>
+        </table>
+        <button onclick="del()">Delete Last Entry</button>
+
+    </body>
+    <script>
+       var x=0;
+        function adding()
+        {
+           x++;
+            var table=document.getElementById("mytable");
+            
+            var row=table.insertRow(1);
+           
+            var cellr=row.insertCell(0);
+            var celln=row.insertCell(1);
+            var x,y,i ;
+    
+            x=document.getElementById("roll").value;
+            y=document.getElementById("name").value;
+            // var r="";
+            // var n="";
+            // for(i=0;i<x.length;++i)
+            // r=r+x[i].parentElement.textcontent;
+            // for(i=0;i<y.length;++i)
+            // n=n+y[i].parentElement.textcontent;
+            // doucument.write(r);
+            // doucument.write(n);
+
+
+            cellr.innerHTML= x;//document.getElementById("roll").nodeValue;
+            celln.innerHTML=y;//document.getElementById("name").nodeValue;
+        }
+        function del()
+        {
+            
+            document.getElementById("mytable").deleteRow(1);
+            
+        }
+    </script>
+</html>

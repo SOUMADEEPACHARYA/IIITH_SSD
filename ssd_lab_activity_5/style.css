@@ -1,0 +1,17 @@
+h1,body{
+    text-align:center;
+    background: -webkit-linear-gradient(to right,rgb(161, 231, 194), rgb(59, 59%, 60%));
+    background: linear-gradient(to right,rgb(184, 81, 160), rgb(59, 59%, 60%));
+}
+#container{
+    width: 300px;
+    border: 15 px solid ;
+    padding:50px;
+    margin: 20px;
+    background-color: white;
+   box-shadow: 5px 10px #888888;
+   position:absolute;
+   text-align:center;
+  
+
+}
