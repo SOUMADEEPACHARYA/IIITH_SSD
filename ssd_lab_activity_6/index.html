@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1> Team Form</h1>
+        <form>
+            <label for="Manager Name">Manager Name<Manager Name/label>
+            <input type="text" id="Manager Name" name="Manager Name" required>
+            <br>
+
+            <label for="Group Email">Group Email</label>
+            <input type="email" id="Group Email" name="Group Email" required>
+            <br>
+            <label for="username">username</label>
+            <input id="username" type="text" onkeyup="validate()" name="username" value="" required>
+              <br>
+            <label for="Password">Server Password</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <label for="cpassword">Confirm Password</label>
+            <input type="password" id="cpassword" name="cpassword"  required>
+            <br>
+            <label for="Team Lead">Team Lead</label>
+            <select name="Team lead" id="Team Lead">
+                <option value="tony">
+                    tony
+                </option>
+                <option value="tony">
+                   johny
+                </option>
+                <option value="tony">
+                    rony
+                </option>
+                <option value="tony">
+                   bony
+                </option>
+            </select>
+        </form>
+        <br>
+        <button type="Submit" value="Submit">Submit</button>
+    </body>
+</html>
